@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body, ul, h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+h3{
+    color: rgb(48, 48, 48);
+}
+.content{
+    margin: 2em 0 0 160px;
+    position: relative;
+    display: inline-block;
+}
+div{
+    margin-bottom: 1em;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    background: transparent;
+    color: green;
+    font-size: 1.3em;
+    position: absolute;
+    right: 0;
+}
+button:focus{
+    outline: none;
+}
+h1{
+    display: inline;
+}
+.burgers{
+    margin-left: 2em;
+}
+.burgers li:before,
+.addedIngredients:before{
+    content: ' ';
+    border: .3em solid transparent;	
+    border-left: .3em solid green;
+    display: inline-block;
+}
+.burgerSizes{
+    display: flex;
+    justify-content: space-around;
+}
+.burgerSizes li,
+.burgerIngredients li{
+    border: 1px solid rgb(66, 66, 66);
+    padding: .5rem 0;
+    width: 14em;
+    text-align: center;
+    background-color: azure;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.burgerSizes .green-white,
+.ingredients.green-white{
+    background-color: green;
+    color: white;
+}
+.burgerIngredients{
+    font-size: 8px;
+    display: flex;
+}
+.burger{
+    width: 10em;
+    margin-left: 8em;
+    max-width: 20em;
+}
+.summarySizes{
+    font-size: 1.5em;
+    border-bottom: 1px solid #696969;
+    padding: .5em .3em;
+}
+.displayNone{
+    display: none;
+}
+.summarySizes span{
+    float: right;
+}
+.addedIngredients{
+    margin: .5em .3em;
+}
